@@ -7,18 +7,9 @@ import RoutesApp from './routes';
 import { ThemeProvider, useTheme } from './ThemeContext';
 
 function App() {
-
-    return (
-        <ThemeProvider>
-            <Main />
-        </ThemeProvider>
-    );
-}
-
-function Main() {
     const { theme } = useTheme();
     return (
-        <div className={theme}>
+        <div>
             <ToastContainer autoClose={2000} />
             <RoutesApp />
         </div>
