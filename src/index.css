@@ -1,17 +1,21 @@
-@font-face {
-  font-family: 'Viga';
-  src: local('Viga'), url(./fonts/Viga-Regular.ttf) format('truetype');
-}
-
-html, body {
+* {
   margin: 0;
   padding: 0;
-  flex-wrap: nowrap;
-  font-family: 'Viga', sans-serif;
-  height: 100vh;
+  box-sizing: border-box;
 }
 
-header {
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -30,10 +34,6 @@ button {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-hr {
-  width: 90%;
 }
 
 .container {

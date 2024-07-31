@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import { useTheme } from '../../ThemeContext';
 
-function Header() {
+function Navbar() {
     const [headerOpacity, setHeaderOpacity] = useState(0);
     const { theme, toggleTheme } = useTheme();
 
@@ -22,12 +22,12 @@ function Header() {
     }, []);
 
     return (
-        <header style={{ backgroundColor: `rgba(0, 0, 0, ${headerOpacity > 0.70 ? 0.70 : headerOpacity})`, backdropFilter: 'blur(5px)' }}>
+        <nav style={{ backgroundColor: `rgba(0, 0, 0, ${headerOpacity > 0.70 ? 0.70 : headerOpacity})`, backdropFilter: 'blur(5px)' }}>
             <Link className="logo" to='/'>Minhas Despesas</Link>
             <Link className="favoritos" to='/login'>Minha Conta</Link>
             <button onClick={toggleTheme} className="theme-button" style={{ border: 'none', background: 'none', cursor: 'pointer' }}>{theme === 'light' ? '🌙' : '☀️'}</button>
-        </header>
+        </nav>
     );
 }
 
-export default Header;
+export default Navbar;
