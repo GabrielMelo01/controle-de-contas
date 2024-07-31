@@ -1,0 +1,29 @@
+.row {
+    display: flex;
+}
+
+.row .column {
+    flex: 0 100% !important;
+}
+
+.row .column-two {
+    flex: 0 50% !important;
+}
+
+.row .column-three {
+    flex: 0 33.33% !important;
+}
+
+.row .column-four {
+    flex: 0 25% !important;
+}
+
+.row .column-five {
+    flex: 0 20% !important;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -2,15 +2,12 @@ import './home.css'
 
 function Home() {
     return (
-        <div className='home-container'>
-            <div className="card">
-                <div className="card"></div>
-                <div className="card"></div>
+        <div class="row">
+            <div className="column card">
+                <div class="row card">Container 1</div>
+                <div class="row card">Container 2</div>
             </div>
-            <div className="card">
-                <h1>Graficos</h1>
-                <p>Aqui tera um grafico com dados das despesas</p>
-            </div>
+            <div className="column card"></div>
         </div>
     );
 }
