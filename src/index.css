@@ -46,6 +46,20 @@ hr {
   margin: 0 auto;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -111,4 +125,40 @@ hr {
   background-color: #f0f0f0;
   color: #000000;
   border: 1px solid #ccc;
+}
+
+.light table {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.light th {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.light td {
+  background-color: #fafafa;
+  color: #333333;
+}
+
+.light tr:nth-child(even) td {
+  background-color: #f6f6f6;
+}
+
+.dark table {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark th {
+  background-color: #444444;
+}
+
+.dark td {
+  background-color: #333333;
+}
+
+.dark tr:nth-child(even) td {
+  background-color: #555555;
 }
