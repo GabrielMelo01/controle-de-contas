@@ -12,6 +12,6 @@
 
 .container {
     height: calc(
-        100vh - 60px
+        100vh - 75px
     );
 }

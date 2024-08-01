@@ -1,9 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import Navbar from './Components/Header';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
-import Header from './Components/Header';
-import Navbar from './Components/Header';
 
 function RoutesApp() {
     return (

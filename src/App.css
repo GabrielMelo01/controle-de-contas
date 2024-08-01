@@ -25,5 +25,6 @@
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }

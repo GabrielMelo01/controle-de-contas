@@ -7,7 +7,9 @@ function Home() {
                 <div class="row card">Container 1</div>
                 <div class="row card">Container 2</div>
             </div>
-            <div className="column card"></div>
+            <div className="column card">
+                <div className='graficos'>Grafico</div>
+            </div>
         </div>
     );
 }
